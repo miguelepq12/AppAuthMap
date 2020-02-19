@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="AppAuthMap.Views.MapView">
+    <StackLayout>
+        <maps:Map x:Name="MyMap" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <StackLayout Spacing="15" Padding="20" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+            <Button HorizontalOptions="EndAndExpand" VerticalOptions="Center" HeightRequest="50" Text="Street" Clicked="Street_OnClicked" />
+            <Button HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" Text="Hibrido" Clicked="Hybrid_OnClicked" />
+            <Button HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="50" Text="Satelital" Clicked="Satellite_OnClicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

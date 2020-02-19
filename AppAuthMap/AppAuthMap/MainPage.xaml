@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppAuthMap"
+             x:Class="AppAuthMap.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand"
+             Orientation="Vertical"
+             Spacing="15">
+        <!-- Place new controls here -->
+    	<Label Text="App de Facebook Login y Mapa" 
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+        <Button x:Name="btnFb" Text="Facebook Login" IsEnabled="True" Clicked="OnFbBtn" />
+        <Button x:Name="btnMapView" Text="Mapa Nativo" IsEnabled="True" Clicked="OnMapBtn" />
+    </StackLayout>
+
+</ContentPage>
